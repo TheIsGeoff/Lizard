@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+
+    padding: 20px;
+}
+
+#lizardButton {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    font-size: 250px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        transition: all 0.1s ease-in-out;
+    }
+    &:active {
+        p {
+            transform: scale(0.9);
+            opacity: 0.8;
+        }
+    }
+}
